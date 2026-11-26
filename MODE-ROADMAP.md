@@ -1,0 +1,177 @@
+# FARX Mode Catalog and Implementation Status
+
+The FARX design calls for 150+ distinct modes. This catalog is a roadmap, not a claim that every mode is implemented. A mode becomes **implemented** only after it has runtime behavior, documentation and automated tests.
+
+## Initial families
+- CODE — implemented preview block.
+- UI — recognized as a block name; domain-specific UI API not implemented.
+- BRAIN — recognized as a block name; AI/logic APIs not implemented.
+- DATA — recognized as a block name; data APIs not implemented.
+- AUDIO — recognized as a block name; audio APIs not implemented.
+- 2D — recognized as a block name; graphics APIs not implemented.
+- 3D — recognized as a block name; 3D APIs not implemented.
+- SYSTEM — recognized as a block name; privileged system APIs not implemented.
+
+## Proposed catalog (150 names)
+The following names reserve the design space. They are not runtime features in this preview.
+
+- 001. `CODE` — planned / not implemented in preview.
+- 002. `UI` — planned / not implemented in preview.
+- 003. `BRAIN` — planned / not implemented in preview.
+- 004. `DATA` — planned / not implemented in preview.
+- 005. `AUDIO` — planned / not implemented in preview.
+- 006. `2D` — planned / not implemented in preview.
+- 007. `3D` — planned / not implemented in preview.
+- 008. `SYSTEM` — planned / not implemented in preview.
+- 009. `WINDOW` — planned / not implemented in preview.
+- 010. `WIDGET` — planned / not implemented in preview.
+- 011. `LAYOUT` — planned / not implemented in preview.
+- 012. `THEME` — planned / not implemented in preview.
+- 013. `STYLE` — planned / not implemented in preview.
+- 014. `ANIMATION` — planned / not implemented in preview.
+- 015. `INPUT` — planned / not implemented in preview.
+- 016. `OUTPUT` — planned / not implemented in preview.
+- 017. `FORM` — planned / not implemented in preview.
+- 018. `DIALOG` — planned / not implemented in preview.
+- 019. `MENU` — planned / not implemented in preview.
+- 020. `NAV` — planned / not implemented in preview.
+- 021. `TEXT` — planned / not implemented in preview.
+- 022. `IMAGE` — planned / not implemented in preview.
+- 023. `VIDEO` — planned / not implemented in preview.
+- 024. `CAMERA` — planned / not implemented in preview.
+- 025. `MIC` — planned / not implemented in preview.
+- 026. `SPEECH` — planned / not implemented in preview.
+- 027. `VOICE` — planned / not implemented in preview.
+- 028. `MUSIC` — planned / not implemented in preview.
+- 029. `SOUND` — planned / not implemented in preview.
+- 030. `MIX` — planned / not implemented in preview.
+- 031. `PIXEL` — planned / not implemented in preview.
+- 032. `VECTOR` — planned / not implemented in preview.
+- 033. `SPRITE` — planned / not implemented in preview.
+- 034. `SCENE` — planned / not implemented in preview.
+- 035. `MODEL` — planned / not implemented in preview.
+- 036. `MESH` — planned / not implemented in preview.
+- 037. `MATERIAL` — planned / not implemented in preview.
+- 038. `LIGHT` — planned / not implemented in preview.
+- 039. `SHADER` — planned / not implemented in preview.
+- 040. `RENDER` — planned / not implemented in preview.
+- 041. `ENTITY` — planned / not implemented in preview.
+- 042. `PHYSICS` — planned / not implemented in preview.
+- 043. `COLLISION` — planned / not implemented in preview.
+- 044. `PARTICLE` — planned / not implemented in preview.
+- 045. `TERRAIN` — planned / not implemented in preview.
+- 046. `WORLD` — planned / not implemented in preview.
+- 047. `MAP` — planned / not implemented in preview.
+- 048. `PATH` — planned / not implemented in preview.
+- 049. `GRAPH` — planned / not implemented in preview.
+- 050. `CHART` — planned / not implemented in preview.
+- 051. `TABLE` — planned / not implemented in preview.
+- 052. `SHEET` — planned / not implemented in preview.
+- 053. `RECORD` — planned / not implemented in preview.
+- 054. `QUERY` — planned / not implemented in preview.
+- 055. `FILTER` — planned / not implemented in preview.
+- 056. `SORT` — planned / not implemented in preview.
+- 057. `INDEX` — planned / not implemented in preview.
+- 058. `CACHE` — planned / not implemented in preview.
+- 059. `STORE` — planned / not implemented in preview.
+- 060. `FILE` — planned / not implemented in preview.
+- 061. `FOLDER` — planned / not implemented in preview.
+- 062. `ARCHIVE` — planned / not implemented in preview.
+- 063. `STREAM` — planned / not implemented in preview.
+- 064. `BUFFER` — planned / not implemented in preview.
+- 065. `MEMORY` — planned / not implemented in preview.
+- 066. `THREAD` — planned / not implemented in preview.
+- 067. `TASK` — planned / not implemented in preview.
+- 068. `ASYNC` — planned / not implemented in preview.
+- 069. `EVENT` — planned / not implemented in preview.
+- 070. `SIGNAL` — planned / not implemented in preview.
+- 071. `NETWORK` — planned / not implemented in preview.
+- 072. `HTTP` — planned / not implemented in preview.
+- 073. `SOCKET` — planned / not implemented in preview.
+- 074. `SERVER` — planned / not implemented in preview.
+- 075. `CLIENT` — planned / not implemented in preview.
+- 076. `CLOUD` — planned / not implemented in preview.
+- 077. `SYNC` — planned / not implemented in preview.
+- 078. `AUTH` — planned / not implemented in preview.
+- 079. `CRYPTO` — planned / not implemented in preview.
+- 080. `SECURE` — planned / not implemented in preview.
+- 081. `DEVICE` — planned / not implemented in preview.
+- 082. `SENSOR` — planned / not implemented in preview.
+- 083. `GPS` — planned / not implemented in preview.
+- 084. `BLUETOOTH` — planned / not implemented in preview.
+- 085. `WIFI` — planned / not implemented in preview.
+- 086. `USB` — planned / not implemented in preview.
+- 087. `PRINT` — planned / not implemented in preview.
+- 088. `SCAN` — planned / not implemented in preview.
+- 089. `NOTIFY` — planned / not implemented in preview.
+- 090. `HAPTIC` — planned / not implemented in preview.
+- 091. `AI` — planned / not implemented in preview.
+- 092. `ML` — planned / not implemented in preview.
+- 093. `NLP` — planned / not implemented in preview.
+- 094. `VISION` — planned / not implemented in preview.
+- 095. `AGENT` — planned / not implemented in preview.
+- 096. `PROMPT` — planned / not implemented in preview.
+- 097. `MODELIO` — planned / not implemented in preview.
+- 098. `TRAIN` — planned / not implemented in preview.
+- 099. `INFER` — planned / not implemented in preview.
+- 100. `VECTORDB` — planned / not implemented in preview.
+- 101. `TEST` — planned / not implemented in preview.
+- 102. `DEBUG` — planned / not implemented in preview.
+- 103. `TRACE` — planned / not implemented in preview.
+- 104. `PROFILE` — planned / not implemented in preview.
+- 105. `LOG` — planned / not implemented in preview.
+- 106. `METRIC` — planned / not implemented in preview.
+- 107. `ASSERT` — planned / not implemented in preview.
+- 108. `MOCK` — planned / not implemented in preview.
+- 109. `BENCH` — planned / not implemented in preview.
+- 110. `COVER` — planned / not implemented in preview.
+- 111. `PACKAGE` — planned / not implemented in preview.
+- 112. `MODULE` — planned / not implemented in preview.
+- 113. `PLUGIN` — planned / not implemented in preview.
+- 114. `LINK` — planned / not implemented in preview.
+- 115. `IMPORT` — planned / not implemented in preview.
+- 116. `EXPORT` — planned / not implemented in preview.
+- 117. `BUILD` — planned / not implemented in preview.
+- 118. `COMPILE` — planned / not implemented in preview.
+- 119. `OPTIMIZE` — planned / not implemented in preview.
+- 120. `DEPLOY` — planned / not implemented in preview.
+- 121. `WINDOWS` — planned / not implemented in preview.
+- 122. `LINUX` — planned / not implemented in preview.
+- 123. `MACOS` — planned / not implemented in preview.
+- 124. `ANDROID` — planned / not implemented in preview.
+- 125. `IOS` — planned / not implemented in preview.
+- 126. `WEB` — planned / not implemented in preview.
+- 127. `DESKTOP` — planned / not implemented in preview.
+- 128. `MOBILE` — planned / not implemented in preview.
+- 129. `CROSS` — planned / not implemented in preview.
+- 130. `NATIVE` — planned / not implemented in preview.
+- 131. `SQL` — planned / not implemented in preview.
+- 132. `JSON` — planned / not implemented in preview.
+- 133. `XML` — planned / not implemented in preview.
+- 134. `CSV` — planned / not implemented in preview.
+- 135. `YAML` — planned / not implemented in preview.
+- 136. `HTML` — planned / not implemented in preview.
+- 137. `CSS` — planned / not implemented in preview.
+- 138. `SCRIPT` — planned / not implemented in preview.
+- 139. `SHELL` — planned / not implemented in preview.
+- 140. `PROCESS` — planned / not implemented in preview.
+- 141. `DATE` — planned / not implemented in preview.
+- 142. `TIME` — planned / not implemented in preview.
+- 143. `MATH` — planned / not implemented in preview.
+- 144. `STATS` — planned / not implemented in preview.
+- 145. `RANDOM` — planned / not implemented in preview.
+- 146. `GEO` — planned / not implemented in preview.
+- 147. `MAPS` — planned / not implemented in preview.
+- 148. `PAYMENT` — planned / not implemented in preview.
+- 149. `STOREKIT` — planned / not implemented in preview.
+- 150. `I18N` — planned / not implemented in preview.
+- 151. `L10N` — planned / not implemented in preview.
+- 152. `ACCESS` — planned / not implemented in preview.
+- 153. `A11Y` — planned / not implemented in preview.
+- 154. `CLIP` — planned / not implemented in preview.
+- 155. `DRAG` — planned / not implemented in preview.
+- 156. `DROP` — planned / not implemented in preview.
+- 157. `GESTURE` — planned / not implemented in preview.
+- 158. `GAME` — planned / not implemented in preview.
+- 159. `LEVEL` — planned / not implemented in preview.
+- 160. `QUEST` — planned / not implemented in preview.
